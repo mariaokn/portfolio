@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>奥野まりあのポートフォリオサイト</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="奥野まりあのポートフォリオサイトです。">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- スライダーのjQuery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slider').bxSlider({
+                    auto: true,
+                    pause: 5000,
+                });
+            });
+            $(function(){
+  $('a[href^="#"]').click(function(){
+    //スクロールのスピード
+    var speed = 500;
+    //リンク元を取得
+    var href= $(this).attr("href");
+    //リンク先を取得
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    //リンク先までの距離を取得
+    var position = target.offset().top;
+    //スムーススクロール
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});
+
+    </script>
+    
+  </head>
+  <body>
+    <header>
+      <div class="container" id="top">
+        <div class="icon">
+          <img src="img/icon.png" width="120" height="120" alt="自己紹介アイコン">
+        </div>
+        <div class="info">
+          
+          <ul>
+            <h1>奥野まりあ</h1>
+            <li>
+              <a href="mailto:maria.ceremony@gmail.com" target="_blank">
+                <!-- target="_blank"の指定で新しいタブに開く -->
+                <img src="img/mail.jpeg" width="20" height="20" alt="メールへのリンクです">
+              </a>
+            <!-- </li>
+            <li>
+              <a href="">
+                <img src="img/tell.jpeg" width="20" height="20" alt="電話番号へのリンクです">
+              </a>
+            </li> -->
+          </ul>
+          <P>社会人歴5年（染工場３ヶ月、衣装デザイナー4年10ヶ月）現在26歳です。</P>
+          <p>前職場では主に子ども用撮影衣装、撮影衣装用小物の商品企画を行なっておりました。</p>
+          <p>プログラミングのスキルはまだまだ初心者レベルですが、独学でHTML、CSS、Javascript、PHPの勉強中です。（2020年4月6日更新）</p>
+        </div>
+      </div>
+
+    </header>
+      <!-- スクロールボタン -->
+      <a href="#skill">▼</a>
+    <section class="skill" id="skill">
+       <h1>SKILL</h1>
+       
+       <P>
+         Illustrator　実務５年（ハンガーイラスト作成、紙面デザイン編集、パターン作成）
+        </P>
+        <P>
+          Photoshop　実務５年（WEBサイト用、誌面入稿用写真データの色合わせ、切り抜き）
+        </P>
+        <P>
+          アパレルcad　専門学校で３年勉強　実務無し
+        </P>
+        <p>
+          紙でのパターン製図　実務５年（主に子供服）
+        </p>
+        <p>
+          Excel　実務5年（VLOOKUP関数などを使用した在庫管理、仕様書作成）
+        </p> 
+        <P>
+          Word　実務5年（報告書作成）
+        </P>
+        <P>
+          WEBコーディング　独学1ヶ月(HTML, CSS, JavaScript,PHP,Ruby)
+        </P>
+      </section>
+     <!-- スクロールボタン --> 
+      <a href="#works">▼</a>
+      <section class="works" id="works">
+        <h1>WORKS</h1>
+        
+        <section>
+          <h1>前職衣装デザインの仕事</h1>
+            <section id="sk">
+              <h1>商品企画</h1>
+              <!-- スライダー -->
+              <div class="slider">
+                <img src="img/1.jpg" width="500" height="300" alt="">
+                <img src="img/2.jpg"  width="500" height="300" alt="">
+                <img src="img/3.jpg"  width="500" height="300" alt="">
+                <img src="img/4.jpg"  width="500" height="300" alt=""> 
+                <img src="img/5.jpg" width="500" height="300" alt="">
+                <img src="img/6.jpg"  width="500" height="300" alt="">
+                <img src="img/7.jpg"  width="500" height="300" alt="">
+                <img src="img/8.jpg"  width="500" height="300" alt=""> 
+                <img src="img/9.jpg"  width="500" height="300" alt="">
+                </div>
+                <!-- スライダー -->
+          
+              <P>
+                前職ではベビー(生後30日~2歳)からジュニアサイズ(150cmサイズ)までの衣装、撮影用衣装小物、和装テキスタイルのデザイナーとして
+                コンセプト立案から商品化までの、デザイン、パターン、中国市場での材料買い付け、材料手配、工場への指示、売価の提案まで行っておりました。
+              </P>
+              <P>
+                年5回の展示会接客でのお客様へのヒアリング、ネットや街中での市場調査、売上管理ツール(navinty)を使用した分析を通して売れる商品の企画を心掛けています。
+              </P> <!-- スクロールボタン -->   
+            <a href="#hs">▼</a>
+            </section>
+            
+            <section id="hs">
+            <h1>販売促進</h1> 
+            <img src="img/h1.jpg" width="400" height="260" alt="紹介画像">
+            <P>
+              販促用小冊子「KATO collection」の
+              年１回の発刊にあたってのモデル手配、撮影指示、紙面校正、デザイン会社へ指示の業務を行っておりました。
+            </P>
+            <P>
+              その他販促物(パネル、POPなど)は入稿データを作成し、ネット印刷業者へ年数回発注しています。
+            </P>
+            <P>
+              新商品の社員向け説明会の開催(約35名) や販売サイト、注文カタログ制作班への商品スペック、コンセプトの説明、ページ校正も行っておりました。
+            </P>   
+               <!-- スクロールボタン -->
+          <a href="#knr">▼</a>
+          </section>
+      
+          <section id="knr">
+            <h1>商品管理</h1>  
+                        <!-- スライダー -->
+              <div class="slider">
+                <img src="img/gu1.jpg" width="500" height="300" alt="">
+                <img src="img/gu2.jpg"  width="500" height="300" alt="">
+                <img src="img/gu3.jpg"  width="500" height="300" alt="">
+                </div>
+                <!-- スライダー --> 
+            <P>
+              材料の在庫管理、中国市場へ出向いての材料買い付けと発注。 
+              商品のコスト管理、価格の決定。
+              商品の品質管理、検品指示、在庫管理の業務も担当しており、２週間程度の海外出張には慣れております。
+            </P> 
+            <!-- スクロールボタン -->
+         <a href="#sm">▼</a>
+          </section>
+        </section>
+        
+        <section id="sm">
+          
+          <h1>前々職染工場での仕事</h1>
+          <section >
+            
+            <h1>伝統工芸品の制作販売</h1> 
+            <P>
+              学生時代のアルバイトを含めると2年間勤めていた染工場では
+              家紋を手染めした工芸品やアニメとのコラボグッズを作成や、
+              梱包、発送業務、店舗、催事での接客販売を行っておりました。
+            </P>
+          </section>
+          <section>
+            
+            <h1>観光客向け体験工房の講師</h1>
+            <P>
+              お客様に手捺染で家紋入れの体験ができる体験工房にて、修学旅行客や外国人観光客の方に楽しんで学んでいただく為の講師としての業務も行っておりました。
+            </P> 
+             <!-- スクロールボタン -->
+        <a href="#fr1">▼</a>
+        
+          </section>
+        </section>  
+        <section id="fr1">
+          <h1>個人での仕事</h1>
+          <p>
+            洋裁技術の向上の為、実益を兼ねた趣味で
+            フリマアプリやSNSサイトにてオーダーメイド衣装の受注販売を行っております。
+            高単価の仕事を受けられるニッチ需要を日々探しています。
+          </p>
+          <section>
+         
+            <h1>ぬいぐるみアウトフィット</h1> 
+            <!-- スライダー -->
+            <div class="slider">
+              <img src="img/d8.JPG" width="500" height="300" alt="">
+              <img src="img/d2.JPG"  width="500" height="300" alt="">
+              <img src="img/d3.JPG"  width="500" height="300" alt="">
+              <img src="img/d4.JPG"  width="500" height="300" alt=""> 
+              <img src="img/d5.JPG" width="500" height="300" alt="">
+              <img src="img/d6.JPG"  width="500" height="300" alt="">
+              <img src="img/d7.jpg"  width="500" height="300" alt="">
+              <img src="img/d1.jpg"  width="500" height="300" alt=""> 
+              <img src="img/d9.jpg"  width="500" height="300" alt="">
+              </div>
+              <!-- スライダー -->
+        <!-- スクロールボタン -->   
+         <a href="#fr2">▼</a>
+          </section>
+          <section id="fr2">
+            
+            <h1>人形アウトフィット</h1>
+           <!-- スライダー -->
+           <div class="slider">
+            <img src="img/doll1.JPG" width="500" height="300" alt="">
+            <img src="img/doll2.JPG"  width="500" height="300" alt="">
+            <img src="img/doll3.JPG"  width="500" height="300" alt="">
+            <!-- スライダー -->
+      
+          </section> 
+           <!-- スクロールボタン -->
+           <a href="#fr3">▼</a>
+          <section id="fr3">
+            
+            <h1>コスプレ衣装</h1> 
+            
+            <!-- スライダー -->
+            <div class="slider">
+              <img src="img/cos1.jpg" width="500" height="300" alt="">
+              <img src="img/cos2.JPG"  width="500" height="300" alt="">
+              <img src="img/cos3.JPG"  width="500" height="300" alt="">
+              <img src="img/cos4.JPG"  width="500" height="300" alt=""> 
+              <img src="img/cos5.JPG" width="500" height="300" alt="">
+              <img src="img/cos6.JPG"  width="500" height="300" alt="">     
+              </div>
+              <!-- スライダー -->
+        
+          </section>
+        </section>  
+      </section>
+    </section>
+       <!-- スクロールボタン --> 
+       <a href="#contact">▼</a>
+
+      <section class="contact" id="contact">
+        <h1>CONTACT</h1>
+        <p>下記アイコンよりメールにてご連絡をお待ちしております</p>
+        <a href="mailto:maria.ceremony@gmail.com" target="_blank">
+          <!-- target="_blank"の指定で新しいタブに開く -->
+          <img src="img/mail.jpeg" width="20" height="20" alt="メールへのリンクです">
+        </a>
+
+      </section>
+      <a href="#top">🔝</a>
+      <footer>
+        <P>Copyright©Maria Okuno. All Rights Reserved.</P>
+      </footer>
+  </body>
+
+  </html>
+
+
+
+
